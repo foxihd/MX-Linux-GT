@@ -1,0 +1,56 @@
+#!/bin/bash
+### BEGIN INIT INFO
+# Provides: TeXSquash
+# Required-Start:
+# Required-Stop:
+# Default-Start: 2 3 4 5
+# Default-Stop:
+# Short-Description: Enable TeX Live on SquashFS to the system
+# Description: Mount portable TeX Live on SquashFS to the system and add the system link
+### END INIT INFO
+
+start () {
+  if [ -e "/home/demo/Live-usb-storage/texlive.sqsh" ] ; then
+    echo "Creating mount point..."
+    mkdir /mnt/texlive
+    echo "Mounting TeX Live..."
+    mount /home/demo/Live-usb-storage/texlive.sqsh /mnt/texlive -t squashfs
+    echo "Add symlink..."
+    /mnt/texlive/bin/x86_64-linux/tlmgr path add
+  fi
+  if [ -e "/usr/share/texlive.sqsh" ] ; then
+    echo "Creating mount point..."
+    mkdir /mnt/texlive
+    echo "Mounting TeX Live..."
+    mount /usr/share/texlive.sqsh /mnt/texlive -t squashfs
+    echo "Add symlink..."
+    /mnt/texlive/bin/x86_64-linux/tlmgr path add
+  fi
+}
+
+stop () {
+    echo "Remove symlink..."
+    tlmgr path remove
+    echo "Un-mounting TeX Live..."
+    umount /mnt/texlive -l
+    echo "Removing mount point..."
+    rm -R /mnt/texlive
+}
+
+case "$1" in
+    start)
+        start
+    ;;
+    stop)
+        stop
+    ;;
+    restart|reload)
+        $0 stop
+        $0 start
+    ;;
+    *)
+        echo "Usage: $0 {start|stop|restart|reload}"
+        exit 2
+    ;;
+esac
+exit $?

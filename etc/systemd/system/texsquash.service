@@ -1,0 +1,11 @@
+[Unit]
+Description=Enable TeX Live on SquashFS to the system
+After=gdm.service
+
+[Service]
+Type=oneshot
+ExecStart=/etc/init.d/texsquash start
+# RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
