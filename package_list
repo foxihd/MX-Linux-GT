@@ -1016,7 +1016,6 @@ libpixman-1-0:amd64                       0.44.0-3
 libpkcs11-helper1t64:amd64                1.30.0-1+b1
 libplacebo349:amd64                       7.349.0-3
 libplist-2.0-4:amd64                      2.6.0-2+b1
-libplymouth5:amd64                        24.004.60-5
 libpmem1:amd64                            1.13.1-1.1+b1
 libpng16-16t64:amd64                      1.6.48-1+deb13u4
 libpocketsphinx3:amd64                    0.8+5prealpha+1-15+b4
@@ -1574,10 +1573,6 @@ pipewire-setup-mx                         25.10.01
 pipewire-v4l2:amd64                       1.4.5-1~mx25+1
 pkexec                                    126-2
 plocate                                   1.1.23-1
-plymouth                                  24.004.60-5
-plymouth-label                            24.004.60-5
-plymouth-modified-init                    25.06.1
-plymouth-themes                           24.004.60-5
 pm-utils                                  1.4.1-21
 pmount                                    0.9.23-9
 pnp.ids                                   0.394-1
