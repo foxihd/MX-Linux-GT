@@ -1,5 +1,5 @@
 This is a personal respin configurations of MX Linux 25 with minimal Gnome for on-the-go use.
-See [release page](https://github.com/foxihd/MX-Linux-GT/releases/tag/v1.0.0-MX25GT) to download and try this implementation.
+See [release page](https://github.com/foxihd/MX-Linux-GT/releases) to download and try this implementation.
 
 Please use [MX Live USB Maker](https://mxlinux.org/blog/live-usb-maker-tool-now-available-as-an-appimage/) to enjoy the full featured mode.
 Thus you can enable the following persistent feature for continous desktop use:
