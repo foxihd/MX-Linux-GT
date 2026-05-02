@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=live-usb-storage
-Exec=/usr/local/sbin/live-usb-storage.sh
+Exec=/usr/local/sbin/setup-live
 Terminal=false
 Type=Application
 X-GNOME-Autostart-enabled=true
