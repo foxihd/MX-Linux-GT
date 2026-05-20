@@ -1,5 +1,5 @@
 [Unit]
-Description=Auto mount /home/user/Live-usb-storage/sync/vault.img
+Description=Auto mount /home/demo/Live-usb-storage/sync/vault.img
 After=gdm.service
 
 [Service]

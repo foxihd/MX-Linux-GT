@@ -14,11 +14,11 @@ start () {
     ln -s /home/demo/Live-usb-storage/texlive.sqsh /usr/share/texlive.sqsh
   fi
   if [ -e "/usr/share/texlive.sqsh" ] ; then
-    echo "Creating mount point..."
+    echo "Found texlive.sqsh!"
     mkdir /mnt/texlive
     echo "Mounting TeX Live..."
     mount /usr/share/texlive.sqsh /mnt/texlive -t squashfs
-    echo "Add symlink..."
+    echo "Add TeX Live to the system..."
     /mnt/texlive/bin/x86_64-linux/tlmgr path add
   fi
 }
