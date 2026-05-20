@@ -1,4 +1,4 @@
-This is a personal respin configurations of MX Linux 25 with minimal Gnome for on-the-go use.
+This is a personal respin configurations of MX Linux 25 with minimal Gnome for on-the-go use, read more on [my blog post](https://foxx.ink/en/2026/introducing-mx-linux-gt/).
 See [release page](https://github.com/foxihd/MX-Linux-GT/releases) to download and try this implementation.
 
 Please use [MX Live USB Maker](https://mxlinux.org/blog/live-usb-maker-tool-now-available-as-an-appimage/) to enjoy the full featured mode.
