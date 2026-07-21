@@ -9,6 +9,16 @@
 # Description: Mount vault.img from /home/demo/Live-usb-storage/sync/vault.img
 ### END INIT INFO
 
-if [ -e "/home/demo/Live-usb-storage/sync/vault.img" ] ; then
-  losetup -fP /home/demo/Live-usb-storage/sync/vault.img
+LIVE=${HOME}/Live-usb-storage
+
+if [ -e "${LIVE}/sync/vault.img" ] ; then
+  losetup -fP ${LIVE}/sync/vault.img
+fi
+
+if [ -e "${LIVE}/bin/rclone" ] ; then
+  ln -s ${LIVE}/bin/rclone.1 /usr/share/man/man1/rclone.1
+fi
+
+if [ -e "${LIVE}/.local/bin/rclone" ] ; then
+  ln -s ${LIVE}/.local/bin/rclone.1 /usr/share/man/man1/rclone.1
 fi
