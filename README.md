@@ -48,7 +48,7 @@ Thus you can enable the following persistent feature for continous desktop use:
 ```
 
 1. Put your appimage or executable binary in `$HOME/Live-usb-storage/.local/bin`.
-    Create the required directory:
+    Create the required directories:
     ```
     mkdir -p $HOME/Live-usb-storage/.local/bin \
              $HOME/Live-usb-storage/.local/share/applications
@@ -67,14 +67,14 @@ Thus you can enable the following persistent feature for continous desktop use:
     Icon=/usr/share/icons/noteapp.svg
     ```
 
-3. If you pin it in the start menu and want to keep the desktop setting,
+3. To keep the desktop settings when you pin the apps on the taskbar or the start menu,
     copy the dconf file:
     ```
     mkdir -p $HOME/Live-usb-storage/.config/dconf/
     cp $HOME/.config/dconf/user $HOME/Live-usb-storage/.config/dconf/user 
     ```
 
-4. Same methods with the GNOME-shell extension:
+4. The same method with the GNOME-shell extensions:
     ```
     mkdir -p $HOME/Live-usb-storage/.local/share/gnome-shell/extensions
     cp $HOME/.local/share/gnome-shell/extensions $HOME/Live-usb-storage/.local/share/gnome-shell/extensions 
