@@ -1,0 +1,9 @@
+NAME="MX"
+VERSION="25.3_GNOME (Infi-GT)"
+ID="mx"
+VERSION_ID="25.3_"
+PRETTY_NAME="MX 25.3_GNOME (Infi-GT)"
+ANSI_COLOR="0;34"
+HOME_URL="https://mxlinux.org"
+BUG_REPORT_URL="https://mxlinux.org"
+BASE=MX
